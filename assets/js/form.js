@@ -20,9 +20,11 @@ const handleSubmit = (e) => {
     }
 
     if(flag == 0){
-        document.getElementById('nameError').innerHTML = ''
-        document.getElementById('emailError').innerHTML = ''
-        document.getElementById('subjectError').innerHTML = ''
+        const errorSpans = document.querySelectorAll("#nameError, #emailError, #subjectError");
+        errorSpans.forEach((span)=>{
+            span.innerHTML = ""
+        })
+        
         
     }
 }
