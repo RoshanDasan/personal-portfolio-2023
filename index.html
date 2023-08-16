@@ -572,8 +572,7 @@
                 action=""
                 method="post"
                 role="form"
-                class="php-email-form"
-                onsubmit="handleSubmit(event)"
+                onsubmit="return handleSubmit(event)"
               >
                 <div class="row">
                   <div class="form-group col-md-6">
@@ -613,6 +612,7 @@
                     class="form-control"
                     name="message"
                     rows="10"
+                    id="message"
                   ></textarea>
                 </div>
 
